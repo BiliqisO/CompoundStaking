@@ -2,9 +2,9 @@
 pragma solidity ^0.8.13;
 import "openzeppelin/token/ERC20/ERC20.sol";
 
-contract Wrappedtoken is ERC20 {
-    constructor() ERC20("WrappedToken", "WETH") {
-        //  _mint(msg.sender, 1_000_000_000_000e18  );
+contract Rewardtoken is ERC20 {
+    constructor() ERC20("BiliqisOToken", "BOT") {
+        //  _mint(msg.sender, 1_000_000_000_000e18 );
     }
 
     function mint(address account, uint256 value) external {
